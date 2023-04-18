@@ -223,3 +223,17 @@ function updateBird() {
     let sound_point = new Audio('sounds effect/point.mp3');
     let sound_die = new Audio('sounds effect/die.mp3');    
 
+function moveBird(e) {
+    if (e.code == "Space" || e.code == "ArrowUp" || e.code == "KeyX") {
+        //jump
+        velocityY = -6;
+
+        //reset game
+        if (gameOver) {
+            bird.y = birdY;
+            pipeArray = [];
+            score = 0;
+            gameOver = false;
+        }
+    }
+}
