@@ -4,7 +4,7 @@ let img = document.getElementById('bird-1');
 let sound_point = new Audio('sounds effect/point.mp3');
 let sound_die = new Audio('sounds effect/die.mp3');
 
-// getting bird element properties
+// bird element properties
 let bird_props = bird.getBoundingClientRect();
 
 // This returns DOMReact -> top, right, bottom, left, x, y, width and height
